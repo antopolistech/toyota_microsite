@@ -39,10 +39,17 @@ body {
 }
 
 .navbar-brand-mnonic {
-  padding-left: 12%;
+  /*padding-left: 12%;*/
  
 }
-
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*pnemonic centered*/
 .navbar-light .navbar-toggler:focus {
   color: rgba(0, 0, 0, 0.5);
   outline: 0;
