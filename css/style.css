@@ -201,17 +201,25 @@ body {
 .offer-detail-sec-carousel {
   margin-left: 6%;
 }
-.offer-detail-sec .owl-carousel img {
- 
 
-  max-width: 520px;
-  max-height: 498px;
+.offer-detail-sec-carousel .owl-stage-outer{
+  
 }
 
-.offer-detail-sec .owl-carousel .active img {
-   box-shadow: 0px 2px 25px  #aaaaaa; 
-   /* border: 1px solid gray;  */
+.offer-detail-sec .owl-carousel img {
+  max-width: 420px;
+  max-height: 498px;
  
+
+}
+
+
+.offer-detail-sec .owl-carousel .active img {
+  box-shadow: 5px 5px 8px 5px #888888;
+  
+
+
+  z-index: 1;
   margin-bottom: 5%;
 }
 
@@ -345,6 +353,7 @@ body {
 
   .offer-detail-sec .owl-carousel img {
     /* border: 2px solid rgb(85, 80, 80); */
+   
   }
 
   .offer-detail-sec .offer-des h6 {
@@ -444,18 +453,24 @@ body {
 }
 
 .car-care-sec .owl-carousel img {
-
-  max-width: 520px;
+  max-width: 420px;
   max-height: 498px;
 }
 
 .car-care-sec .owl-item {
 }
 
+
+
+
 .car-care-sec .owl-carousel .active img {
-  box-shadow: 10px 10px 5px #00000063;
+  
 
   margin-bottom: 5%;
+  box-shadow: 5px 5px 8px 5px #ffffff41;
+  /* transform: scale(20px, 3px); */
+  z-index: 1;
+ 
 }
 
 @media (max-width: 767px) {
