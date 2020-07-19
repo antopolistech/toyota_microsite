@@ -40,7 +40,6 @@ body {
 
 .navbar-brand-mnonic {
   /*padding-left: 12%;*/
- 
 }
 .topnav-centered a {
   float: none;
@@ -129,11 +128,11 @@ body {
 /* toyota-banner */
 .toyota-banner {
   background-image: url(../images/Banner.jpg);
-  background-color: #ffffff; /* Used if the image is unavailable */
-  height: auto; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-color: #ffffff;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   position: relative;
 }
@@ -199,19 +198,20 @@ body {
   padding: 100px 2% 2% 2%;
   background-color: #ffffff;
 }
-
+.offer-detail-sec-carousel {
+  margin-left: 6%;
+}
 .offer-detail-sec .owl-carousel img {
-  border-right: 5px solid #ffffff;
-  border-left: 5px solid #ffffff;
+ 
 
   max-width: 520px;
   max-height: 498px;
 }
 
 .offer-detail-sec .owl-carousel .active img {
-  /* box-shadow: 0px 2px 25px -10px #aaaaaa; */
-  /* border: 1px solid gray; */
-
+   box-shadow: 0px 2px 25px  #aaaaaa; 
+   /* border: 1px solid gray;  */
+ 
   margin-bottom: 5%;
 }
 
@@ -222,7 +222,23 @@ body {
 }
 
 .owl-theme span {
-  display: none;
+  font-size: 100px;
+}
+
+/* .owl-theme .owl-prev {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.owl-theme .owl-next {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+} */
+
+.owl-theme span:hover {
+  color: red;
 }
 
 .offer-detail-sec h1 {
@@ -235,18 +251,18 @@ body {
 
 .offer-detail-sec .offer-des {
   color: #ffffff;
-  background-color: #3d4046;
-  margin: 2% 0% 8% 0%;
+  /* margin: 2% 0% 8% 0%;
   padding-top: 5%;
   padding-right: 5%;
   padding-left: 5%;
-  padding-bottom: 6%;
+  padding-bottom: 6%; */
   height: auto;
+
   /* border-radius: 20px; */
 }
 
 .offer-detail-sec .offer-des h4 {
-  color: #ffffff;
+  color: #000000;
   font-size: 22px;
 }
 
@@ -264,7 +280,7 @@ body {
   text-transform: uppercase;
 }
 .offer-detail-sec .offer-des h6 {
-  color: #ffffff;
+  color: #000000;
   font-weight: 400;
   display: inline;
   font-size: 16px;
@@ -428,8 +444,7 @@ body {
 }
 
 .car-care-sec .owl-carousel img {
-  border-right: 5px solid black;
-  border-left: 5px solid black;
+
   max-width: 520px;
   max-height: 498px;
 }
@@ -593,7 +608,7 @@ body {
   border-radius: 3px;
 }
 .owl-theme .owl-nav [class*="owl-"]:hover {
-  background: #869791;
+  background: transparent;
   color: #fff;
   text-decoration: none;
 }
@@ -632,4 +647,43 @@ body {
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: rgba(255, 0, 0, 0.699);
+}
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 33%;
+  left: 101%;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 33%;
+  left: -9%;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  background: 0 0;
+  color: red;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
 }
