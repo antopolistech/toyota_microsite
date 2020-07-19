@@ -136,6 +136,16 @@ body {
 
   position: relative;
 }
+.car-care-sec{
+  background-image: url(../images/bg-2.jpg);
+  background-color: #ffffff;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
 
 /* .toyota-banner::before {
  content: '';
