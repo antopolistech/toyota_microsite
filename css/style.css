@@ -127,9 +127,9 @@ body {
 
 /* toyota-banner */
 .toyota-banner {
-  background-image: url(../images/banner+.jpg);
+  /*background-image: url(../images/banner+.jpg);*/
   background-color: #ffffff;
-  height: 800px;
+  /*height: 800px;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -353,6 +353,9 @@ body {
 }
 
 @media (max-width: 767px) {
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    display: none;
+  }
   .offer-detail-sec {
     margin-top: 0%;
   }
@@ -506,6 +509,7 @@ body {
 }
 
 @media (min-width: 1400px) {
+
   .car-care-sec .owl-carousel img {
     /* border: 2px solid rgb(85, 80, 80); */
     width: 520px;
